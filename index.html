@@ -1,12 +1,16 @@
 <html>
-<head>
-<meta charset="utf-8">
-<title>Welcome to myPage</title>
-</head>
-<body>
-Hello  world!
-	<?php
-		echo "abc";
-	?>
-</body>
+	<head>
+		<meta charset="utf-8" />
+		<script type="text/javascript" charset="UTF-8"></script>
+	</head>
+	<body>
+		<?php
+		$to = "y_odaka@hotmail.com";
+		$subject = "TEST MAIL";
+		$message = "Hello!rnThis is TEST MAIL.";
+		$headers = "From: y.odaka.519@gmail.com";
+		 
+		mail($to, $subject, $message, $headers);
+		?>
+	</body>
 </html>
